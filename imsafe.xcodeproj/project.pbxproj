@@ -1,0 +1,1149 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA789291EE47E007D975E /* imsafeApp.swift */; };
+		D32EA78C291EE47E007D975E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA78B291EE47E007D975E /* ContentView.swift */; };
+		D32EA78E291EE47F007D975E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA78D291EE47F007D975E /* Assets.xcassets */; };
+		D32EA791291EE47F007D975E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA790291EE47F007D975E /* Preview Assets.xcassets */; };
+		D32EA79B291EE47F007D975E /* imsafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA79A291EE47F007D975E /* imsafeTests.swift */; };
+		D32EA7A5291EE47F007D975E /* imsafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7A4291EE47F007D975E /* imsafeUITests.swift */; };
+		D32EA7A7291EE47F007D975E /* imsafeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7A6291EE47F007D975E /* imsafeUITestsLaunchTests.swift */; };
+		D32EA7AB291EE47F007D975E /* imsafe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D32EA7AA291EE47F007D975E /* imsafe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D32EA7B0291EE480007D975E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA7AF291EE480007D975E /* Assets.xcassets */; };
+		D32EA7B6291EE480007D975E /* imsafe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D32EA7B5291EE480007D975E /* imsafe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D32EA7BB291EE480007D975E /* imsafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7BA291EE480007D975E /* imsafeApp.swift */; };
+		D32EA7BD291EE480007D975E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7BC291EE480007D975E /* ContentView.swift */; };
+		D32EA7BF291EE480007D975E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7BE291EE480007D975E /* NotificationController.swift */; };
+		D32EA7C1291EE480007D975E /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7C0291EE480007D975E /* NotificationView.swift */; };
+		D32EA7C3291EE480007D975E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7C2291EE480007D975E /* ComplicationController.swift */; };
+		D32EA7C5291EE481007D975E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA7C4291EE481007D975E /* Assets.xcassets */; };
+		D32EA7C8291EE481007D975E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA7C7291EE481007D975E /* Preview Assets.xcassets */; };
+		D32EA7D4291EE481007D975E /* imsafe_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7D3291EE481007D975E /* imsafe_WatchKit_AppTests.swift */; };
+		D32EA7DE291EE481007D975E /* imsafe_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7DD291EE481007D975E /* imsafe_WatchKit_AppUITests.swift */; };
+		D32EA7E0291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7DF291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D32EA797291EE47F007D975E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32EA77E291EE47E007D975E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32EA785291EE47E007D975E;
+			remoteInfo = imsafe;
+		};
+		D32EA7A1291EE47F007D975E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32EA77E291EE47E007D975E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32EA785291EE47E007D975E;
+			remoteInfo = imsafe;
+		};
+		D32EA7AC291EE47F007D975E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32EA77E291EE47E007D975E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32EA7A9291EE47F007D975E;
+			remoteInfo = "imsafe WatchKit App";
+		};
+		D32EA7B7291EE480007D975E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32EA77E291EE47E007D975E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32EA7B4291EE480007D975E;
+			remoteInfo = "imsafe WatchKit Extension";
+		};
+		D32EA7D0291EE481007D975E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32EA77E291EE47E007D975E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32EA7B4291EE480007D975E;
+			remoteInfo = "imsafe WatchKit Extension";
+		};
+		D32EA7DA291EE481007D975E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D32EA77E291EE47E007D975E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D32EA7A9291EE47F007D975E;
+			remoteInfo = "imsafe WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D32EA7E6291EE481007D975E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D32EA7B6291EE480007D975E /* imsafe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7EA291EE481007D975E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D32EA7AB291EE47F007D975E /* imsafe WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D32EA786291EE47E007D975E /* imsafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imsafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA789291EE47E007D975E /* imsafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeApp.swift; sourceTree = "<group>"; };
+		D32EA78B291EE47E007D975E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D32EA78D291EE47F007D975E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D32EA790291EE47F007D975E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D32EA796291EE47F007D975E /* imsafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imsafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA79A291EE47F007D975E /* imsafeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeTests.swift; sourceTree = "<group>"; };
+		D32EA7A0291EE47F007D975E /* imsafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imsafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA7A4291EE47F007D975E /* imsafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeUITests.swift; sourceTree = "<group>"; };
+		D32EA7A6291EE47F007D975E /* imsafeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D32EA7AA291EE47F007D975E /* imsafe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "imsafe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA7AF291EE480007D975E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D32EA7B5291EE480007D975E /* imsafe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "imsafe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA7BA291EE480007D975E /* imsafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeApp.swift; sourceTree = "<group>"; };
+		D32EA7BC291EE480007D975E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D32EA7BE291EE480007D975E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D32EA7C0291EE480007D975E /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		D32EA7C2291EE480007D975E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D32EA7C4291EE481007D975E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D32EA7C7291EE481007D975E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D32EA7C9291EE481007D975E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D32EA7CA291EE481007D975E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D32EA7CF291EE481007D975E /* imsafe WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "imsafe WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA7D3291EE481007D975E /* imsafe_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafe_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		D32EA7D9291EE481007D975E /* imsafe WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "imsafe WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D32EA7DD291EE481007D975E /* imsafe_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafe_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		D32EA7DF291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafe_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D32EA783291EE47E007D975E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA793291EE47F007D975E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA79D291EE47F007D975E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7B2291EE480007D975E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7CC291EE481007D975E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7D6291EE481007D975E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D32EA77D291EE47E007D975E = {
+			isa = PBXGroup;
+			children = (
+				D32EA788291EE47E007D975E /* imsafe */,
+				D32EA799291EE47F007D975E /* imsafeTests */,
+				D32EA7A3291EE47F007D975E /* imsafeUITests */,
+				D32EA7AE291EE47F007D975E /* imsafe WatchKit App */,
+				D32EA7B9291EE480007D975E /* imsafe WatchKit Extension */,
+				D32EA7D2291EE481007D975E /* imsafe WatchKit AppTests */,
+				D32EA7DC291EE481007D975E /* imsafe WatchKit AppUITests */,
+				D32EA787291EE47E007D975E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D32EA787291EE47E007D975E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA786291EE47E007D975E /* imsafe.app */,
+				D32EA796291EE47F007D975E /* imsafeTests.xctest */,
+				D32EA7A0291EE47F007D975E /* imsafeUITests.xctest */,
+				D32EA7AA291EE47F007D975E /* imsafe WatchKit App.app */,
+				D32EA7B5291EE480007D975E /* imsafe WatchKit Extension.appex */,
+				D32EA7CF291EE481007D975E /* imsafe WatchKit AppTests.xctest */,
+				D32EA7D9291EE481007D975E /* imsafe WatchKit AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D32EA788291EE47E007D975E /* imsafe */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA789291EE47E007D975E /* imsafeApp.swift */,
+				D32EA78B291EE47E007D975E /* ContentView.swift */,
+				D32EA78D291EE47F007D975E /* Assets.xcassets */,
+				D32EA78F291EE47F007D975E /* Preview Content */,
+			);
+			path = imsafe;
+			sourceTree = "<group>";
+		};
+		D32EA78F291EE47F007D975E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA790291EE47F007D975E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D32EA799291EE47F007D975E /* imsafeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA79A291EE47F007D975E /* imsafeTests.swift */,
+			);
+			path = imsafeTests;
+			sourceTree = "<group>";
+		};
+		D32EA7A3291EE47F007D975E /* imsafeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA7A4291EE47F007D975E /* imsafeUITests.swift */,
+				D32EA7A6291EE47F007D975E /* imsafeUITestsLaunchTests.swift */,
+			);
+			path = imsafeUITests;
+			sourceTree = "<group>";
+		};
+		D32EA7AE291EE47F007D975E /* imsafe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA7AF291EE480007D975E /* Assets.xcassets */,
+			);
+			path = "imsafe WatchKit App";
+			sourceTree = "<group>";
+		};
+		D32EA7B9291EE480007D975E /* imsafe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA7BA291EE480007D975E /* imsafeApp.swift */,
+				D32EA7BC291EE480007D975E /* ContentView.swift */,
+				D32EA7BE291EE480007D975E /* NotificationController.swift */,
+				D32EA7C0291EE480007D975E /* NotificationView.swift */,
+				D32EA7C2291EE480007D975E /* ComplicationController.swift */,
+				D32EA7C4291EE481007D975E /* Assets.xcassets */,
+				D32EA7C9291EE481007D975E /* Info.plist */,
+				D32EA7CA291EE481007D975E /* PushNotificationPayload.apns */,
+				D32EA7C6291EE481007D975E /* Preview Content */,
+			);
+			path = "imsafe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D32EA7C6291EE481007D975E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA7C7291EE481007D975E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D32EA7D2291EE481007D975E /* imsafe WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA7D3291EE481007D975E /* imsafe_WatchKit_AppTests.swift */,
+			);
+			path = "imsafe WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		D32EA7DC291EE481007D975E /* imsafe WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D32EA7DD291EE481007D975E /* imsafe_WatchKit_AppUITests.swift */,
+				D32EA7DF291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "imsafe WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D32EA785291EE47E007D975E /* imsafe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7EB291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe" */;
+			buildPhases = (
+				D32EA782291EE47E007D975E /* Sources */,
+				D32EA783291EE47E007D975E /* Frameworks */,
+				D32EA784291EE47E007D975E /* Resources */,
+				D32EA7EA291EE481007D975E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32EA7AD291EE47F007D975E /* PBXTargetDependency */,
+			);
+			name = imsafe;
+			productName = imsafe;
+			productReference = D32EA786291EE47E007D975E /* imsafe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D32EA795291EE47F007D975E /* imsafeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7EE291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafeTests" */;
+			buildPhases = (
+				D32EA792291EE47F007D975E /* Sources */,
+				D32EA793291EE47F007D975E /* Frameworks */,
+				D32EA794291EE47F007D975E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32EA798291EE47F007D975E /* PBXTargetDependency */,
+			);
+			name = imsafeTests;
+			productName = imsafeTests;
+			productReference = D32EA796291EE47F007D975E /* imsafeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D32EA79F291EE47F007D975E /* imsafeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7F1291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafeUITests" */;
+			buildPhases = (
+				D32EA79C291EE47F007D975E /* Sources */,
+				D32EA79D291EE47F007D975E /* Frameworks */,
+				D32EA79E291EE47F007D975E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32EA7A2291EE47F007D975E /* PBXTargetDependency */,
+			);
+			name = imsafeUITests;
+			productName = imsafeUITests;
+			productReference = D32EA7A0291EE47F007D975E /* imsafeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D32EA7A9291EE47F007D975E /* imsafe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7E7291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit App" */;
+			buildPhases = (
+				D32EA7A8291EE47F007D975E /* Resources */,
+				D32EA7E6291EE481007D975E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32EA7B8291EE480007D975E /* PBXTargetDependency */,
+			);
+			name = "imsafe WatchKit App";
+			productName = "imsafe WatchKit App";
+			productReference = D32EA7AA291EE47F007D975E /* imsafe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D32EA7B4291EE480007D975E /* imsafe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7E3291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit Extension" */;
+			buildPhases = (
+				D32EA7B1291EE480007D975E /* Sources */,
+				D32EA7B2291EE480007D975E /* Frameworks */,
+				D32EA7B3291EE480007D975E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "imsafe WatchKit Extension";
+			productName = "imsafe WatchKit Extension";
+			productReference = D32EA7B5291EE480007D975E /* imsafe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		D32EA7CE291EE481007D975E /* imsafe WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7F4291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit AppTests" */;
+			buildPhases = (
+				D32EA7CB291EE481007D975E /* Sources */,
+				D32EA7CC291EE481007D975E /* Frameworks */,
+				D32EA7CD291EE481007D975E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32EA7D1291EE481007D975E /* PBXTargetDependency */,
+			);
+			name = "imsafe WatchKit AppTests";
+			productName = "imsafe WatchKit AppTests";
+			productReference = D32EA7CF291EE481007D975E /* imsafe WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D32EA7D8291EE481007D975E /* imsafe WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D32EA7F7291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit AppUITests" */;
+			buildPhases = (
+				D32EA7D5291EE481007D975E /* Sources */,
+				D32EA7D6291EE481007D975E /* Frameworks */,
+				D32EA7D7291EE481007D975E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D32EA7DB291EE481007D975E /* PBXTargetDependency */,
+			);
+			name = "imsafe WatchKit AppUITests";
+			productName = "imsafe WatchKit AppUITests";
+			productReference = D32EA7D9291EE481007D975E /* imsafe WatchKit AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D32EA77E291EE47E007D975E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D32EA785291EE47E007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D32EA795291EE47F007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D32EA785291EE47E007D975E;
+					};
+					D32EA79F291EE47F007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D32EA785291EE47E007D975E;
+					};
+					D32EA7A9291EE47F007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D32EA7B4291EE480007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					D32EA7CE291EE481007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D32EA7B4291EE480007D975E;
+					};
+					D32EA7D8291EE481007D975E = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = D32EA7A9291EE47F007D975E;
+					};
+				};
+			};
+			buildConfigurationList = D32EA781291EE47E007D975E /* Build configuration list for PBXProject "imsafe" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D32EA77D291EE47E007D975E;
+			productRefGroup = D32EA787291EE47E007D975E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D32EA785291EE47E007D975E /* imsafe */,
+				D32EA795291EE47F007D975E /* imsafeTests */,
+				D32EA79F291EE47F007D975E /* imsafeUITests */,
+				D32EA7A9291EE47F007D975E /* imsafe WatchKit App */,
+				D32EA7B4291EE480007D975E /* imsafe WatchKit Extension */,
+				D32EA7CE291EE481007D975E /* imsafe WatchKit AppTests */,
+				D32EA7D8291EE481007D975E /* imsafe WatchKit AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D32EA784291EE47E007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA791291EE47F007D975E /* Preview Assets.xcassets in Resources */,
+				D32EA78E291EE47F007D975E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA794291EE47F007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA79E291EE47F007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7A8291EE47F007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA7B0291EE480007D975E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7B3291EE480007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA7C8291EE481007D975E /* Preview Assets.xcassets in Resources */,
+				D32EA7C5291EE481007D975E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7CD291EE481007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7D7291EE481007D975E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D32EA782291EE47E007D975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA78C291EE47E007D975E /* ContentView.swift in Sources */,
+				D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA792291EE47F007D975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA79B291EE47F007D975E /* imsafeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA79C291EE47F007D975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA7A5291EE47F007D975E /* imsafeUITests.swift in Sources */,
+				D32EA7A7291EE47F007D975E /* imsafeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7B1291EE480007D975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA7BF291EE480007D975E /* NotificationController.swift in Sources */,
+				D32EA7BD291EE480007D975E /* ContentView.swift in Sources */,
+				D32EA7C3291EE480007D975E /* ComplicationController.swift in Sources */,
+				D32EA7BB291EE480007D975E /* imsafeApp.swift in Sources */,
+				D32EA7C1291EE480007D975E /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7CB291EE481007D975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA7D4291EE481007D975E /* imsafe_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D32EA7D5291EE481007D975E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32EA7E0291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift in Sources */,
+				D32EA7DE291EE481007D975E /* imsafe_WatchKit_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D32EA798291EE47F007D975E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32EA785291EE47E007D975E /* imsafe */;
+			targetProxy = D32EA797291EE47F007D975E /* PBXContainerItemProxy */;
+		};
+		D32EA7A2291EE47F007D975E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32EA785291EE47E007D975E /* imsafe */;
+			targetProxy = D32EA7A1291EE47F007D975E /* PBXContainerItemProxy */;
+		};
+		D32EA7AD291EE47F007D975E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32EA7A9291EE47F007D975E /* imsafe WatchKit App */;
+			targetProxy = D32EA7AC291EE47F007D975E /* PBXContainerItemProxy */;
+		};
+		D32EA7B8291EE480007D975E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32EA7B4291EE480007D975E /* imsafe WatchKit Extension */;
+			targetProxy = D32EA7B7291EE480007D975E /* PBXContainerItemProxy */;
+		};
+		D32EA7D1291EE481007D975E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32EA7B4291EE480007D975E /* imsafe WatchKit Extension */;
+			targetProxy = D32EA7D0291EE481007D975E /* PBXContainerItemProxy */;
+		};
+		D32EA7DB291EE481007D975E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D32EA7A9291EE47F007D975E /* imsafe WatchKit App */;
+			targetProxy = D32EA7DA291EE481007D975E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D32EA7E1291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D32EA7E2291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D32EA7E4291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"imsafe WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "imsafe WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "imsafe WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D32EA7E5291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"imsafe WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "imsafe WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "imsafe WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D32EA7E8291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = imsafe_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "imsafe WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.angelring.imsafe;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D32EA7E9291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = imsafe_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "imsafe WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.angelring.imsafe;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D32EA7EC291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"imsafe/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D32EA7ED291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"imsafe/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D32EA7EF291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imsafe.app/imsafe";
+			};
+			name = Debug;
+		};
+		D32EA7F0291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imsafe.app/imsafe";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D32EA7F2291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = imsafe;
+			};
+			name = Debug;
+		};
+		D32EA7F3291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.angelring.imsafeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = imsafe;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D32EA7F5291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelring.imsafe-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imsafe WatchKit Extension.appex/imsafe WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D32EA7F6291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelring.imsafe-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imsafe WatchKit Extension.appex/imsafe WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		D32EA7F8291EE481007D975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelring.imsafe-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "imsafe WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		D32EA7F9291EE481007D975E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelring.imsafe-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "imsafe WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D32EA781291EE47E007D975E /* Build configuration list for PBXProject "imsafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7E1291EE481007D975E /* Debug */,
+				D32EA7E2291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7E3291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7E4291EE481007D975E /* Debug */,
+				D32EA7E5291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7E7291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7E8291EE481007D975E /* Debug */,
+				D32EA7E9291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7EB291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7EC291EE481007D975E /* Debug */,
+				D32EA7ED291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7EE291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7EF291EE481007D975E /* Debug */,
+				D32EA7F0291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7F1291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7F2291EE481007D975E /* Debug */,
+				D32EA7F3291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7F4291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7F5291EE481007D975E /* Debug */,
+				D32EA7F6291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D32EA7F7291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32EA7F8291EE481007D975E /* Debug */,
+				D32EA7F9291EE481007D975E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D32EA77E291EE47E007D975E /* Project object */;
+}
