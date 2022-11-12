@@ -32,7 +32,6 @@ struct MainView: View {
                         .frame(width: shadowSize, height: shadowSize)
                     Button(main.getState()) {
                         lastButtonPress = Date()
-                        print(lastButtonPress)
                         main.safetyConfirmed.toggle()
                         let secondsToDelay = 5.0
                         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
