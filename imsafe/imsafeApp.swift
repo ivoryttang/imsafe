@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct imsafeApp: App {
+    @StateObject private var main = Main()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView().environmentObject(main)
         }
+    }
+}
+
+struct imsafeApp_Previews: PreviewProvider {
+    static let main = Main()
+    static var previews: some View {
+        LoginView().environmentObject(main)
     }
 }

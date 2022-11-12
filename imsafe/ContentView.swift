@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    var username: String
+    var date: Date
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            MainView().tabItem {}
+            ProfileView(username: username, date: date).tabItem {}
+        }
+        .tabViewStyle(.page)
+        .indexViewStyle(.page(backgroundDisplayMode: .never))
+        .edgesIgnoringSafeArea(.all)
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(username:"", date: Date())
     }
 }

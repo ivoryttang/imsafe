@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA789291EE47E007D975E /* imsafeApp.swift */; };
-		D32EA78C291EE47E007D975E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA78B291EE47E007D975E /* ContentView.swift */; };
+		D32EA78C291EE47E007D975E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA78B291EE47E007D975E /* LoginView.swift */; };
 		D32EA78E291EE47F007D975E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA78D291EE47F007D975E /* Assets.xcassets */; };
 		D32EA791291EE47F007D975E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA790291EE47F007D975E /* Preview Assets.xcassets */; };
 		D32EA79B291EE47F007D975E /* imsafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA79A291EE47F007D975E /* imsafeTests.swift */; };
@@ -27,6 +27,10 @@
 		D32EA7D4291EE481007D975E /* imsafe_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7D3291EE481007D975E /* imsafe_WatchKit_AppTests.swift */; };
 		D32EA7DE291EE481007D975E /* imsafe_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7DD291EE481007D975E /* imsafe_WatchKit_AppUITests.swift */; };
 		D32EA7E0291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7DF291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift */; };
+		D32EA7FB291EE5CF007D975E /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FA291EE5CF007D975E /* Main.swift */; };
+		D32EA7FD291EE631007D975E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FC291EE631007D975E /* Profile.swift */; };
+		D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FE291EE6C1007D975E /* MainView.swift */; };
+		D32EA807291F1BFB007D975E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA806291F1BFB007D975E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,7 +106,7 @@
 /* Begin PBXFileReference section */
 		D32EA786291EE47E007D975E /* imsafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imsafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32EA789291EE47E007D975E /* imsafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeApp.swift; sourceTree = "<group>"; };
-		D32EA78B291EE47E007D975E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D32EA78B291EE47E007D975E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D32EA78D291EE47F007D975E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D32EA790291EE47F007D975E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D32EA796291EE47F007D975E /* imsafeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imsafeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,10 @@
 		D32EA7D9291EE481007D975E /* imsafe WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "imsafe WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32EA7DD291EE481007D975E /* imsafe_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafe_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		D32EA7DF291EE481007D975E /* imsafe_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafe_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D32EA7FA291EE5CF007D975E /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		D32EA7FC291EE631007D975E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D32EA7FE291EE6C1007D975E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D32EA806291F1BFB007D975E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,7 +215,11 @@
 			isa = PBXGroup;
 			children = (
 				D32EA789291EE47E007D975E /* imsafeApp.swift */,
-				D32EA78B291EE47E007D975E /* ContentView.swift */,
+				D32EA7FC291EE631007D975E /* Profile.swift */,
+				D32EA7FA291EE5CF007D975E /* Main.swift */,
+				D32EA78B291EE47E007D975E /* LoginView.swift */,
+				D32EA806291F1BFB007D975E /* ContentView.swift */,
+				D32EA7FE291EE6C1007D975E /* MainView.swift */,
 				D32EA78D291EE47F007D975E /* Assets.xcassets */,
 				D32EA78F291EE47F007D975E /* Preview Content */,
 			);
@@ -539,7 +551,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32EA78C291EE47E007D975E /* ContentView.swift in Sources */,
+				D32EA7FB291EE5CF007D975E /* Main.swift in Sources */,
+				D32EA7FD291EE631007D975E /* Profile.swift in Sources */,
+				D32EA807291F1BFB007D975E /* ContentView.swift in Sources */,
+				D32EA78C291EE47E007D975E /* LoginView.swift in Sources */,
+				D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */,
 				D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
