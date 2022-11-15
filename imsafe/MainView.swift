@@ -11,6 +11,7 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var main: Main
     @State private var lastButtonPress = Date()
+    @State var isPresented = true
     
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
     var profile: RoundedRectangle { RoundedRectangle(cornerRadius: 10) }
@@ -30,6 +31,7 @@ struct MainView: View {
                     OuterCircle
                         .clipShape(Circle())
                         .frame(width: shadowSize, height: shadowSize)
+                   
                     Button(main.getState()) {
                         lastButtonPress = Date()
                         main.safetyConfirmed.toggle()
@@ -37,12 +39,16 @@ struct MainView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
                             main.safetyConfirmed.toggle()
                         }
+                        
                     }
                     .foregroundColor(.black)
                     .font(.system(size: 25))
                     .frame(width: buttonSize, height: buttonSize)
                     .background(innerCircle)
                     .clipShape(Circle())
+                    .sheet(isPresented: $isPresented){
+                        MyView()
+                    }
                 }.padding([.top, .bottom], 30)
                 Text(main.getCurrentInstructions())
                     .multilineTextAlignment(.center)

@@ -31,6 +31,9 @@
 		D32EA7FD291EE631007D975E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FC291EE631007D975E /* Profile.swift */; };
 		D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FE291EE6C1007D975E /* MainView.swift */; };
 		D32EA807291F1BFB007D975E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA806291F1BFB007D975E /* ContentView.swift */; };
+		D32EA80B291F697E007D975E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80A291F697E007D975E /* ViewController.swift */; };
+		D32EA80D291F6A22007D975E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80C291F6A22007D975E /* InterfaceController.swift */; };
+		D32EA80F292018A4007D975E /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80E292018A4007D975E /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +138,9 @@
 		D32EA7FC291EE631007D975E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D32EA7FE291EE6C1007D975E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D32EA806291F1BFB007D975E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D32EA80A291F697E007D975E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D32EA80C291F6A22007D975E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D32EA80E292018A4007D975E /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,8 @@
 				D32EA7FE291EE6C1007D975E /* MainView.swift */,
 				D32EA78D291EE47F007D975E /* Assets.xcassets */,
 				D32EA78F291EE47F007D975E /* Preview Content */,
+				D32EA80A291F697E007D975E /* ViewController.swift */,
+				D32EA80E292018A4007D975E /* MyView.swift */,
 			);
 			path = imsafe;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 				D32EA7BE291EE480007D975E /* NotificationController.swift */,
 				D32EA7C0291EE480007D975E /* NotificationView.swift */,
 				D32EA7C2291EE480007D975E /* ComplicationController.swift */,
+				D32EA80C291F6A22007D975E /* InterfaceController.swift */,
 				D32EA7C4291EE481007D975E /* Assets.xcassets */,
 				D32EA7C9291EE481007D975E /* Info.plist */,
 				D32EA7CA291EE481007D975E /* PushNotificationPayload.apns */,
@@ -551,10 +560,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32EA80F292018A4007D975E /* MyView.swift in Sources */,
 				D32EA7FB291EE5CF007D975E /* Main.swift in Sources */,
 				D32EA7FD291EE631007D975E /* Profile.swift in Sources */,
 				D32EA807291F1BFB007D975E /* ContentView.swift in Sources */,
 				D32EA78C291EE47E007D975E /* LoginView.swift in Sources */,
+				D32EA80B291F697E007D975E /* ViewController.swift in Sources */,
 				D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */,
 				D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */,
 			);
@@ -584,6 +595,7 @@
 				D32EA7BF291EE480007D975E /* NotificationController.swift in Sources */,
 				D32EA7BD291EE480007D975E /* ContentView.swift in Sources */,
 				D32EA7C3291EE480007D975E /* ComplicationController.swift in Sources */,
+				D32EA80D291F6A22007D975E /* InterfaceController.swift in Sources */,
 				D32EA7BB291EE480007D975E /* imsafeApp.swift in Sources */,
 				D32EA7C1291EE480007D975E /* NotificationView.swift in Sources */,
 			);

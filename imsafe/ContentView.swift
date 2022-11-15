@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import WatchConnectivity
 
 struct ContentView: View {
     var username: String
     var date: Date
+    
     var body: some View {
+        
+        
         TabView {
             MainView().tabItem {}
             ProfileView(username: username, date: date).tabItem {}
@@ -18,7 +22,7 @@ struct ContentView: View {
         .tabViewStyle(.page)
         .indexViewStyle(.page(backgroundDisplayMode: .never))
         .edgesIgnoringSafeArea(.all)
-        
+         
     }
 }
 

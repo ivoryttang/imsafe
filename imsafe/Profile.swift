@@ -54,7 +54,7 @@ struct ProfileView: View {
                         VStack {
                             Text(username)
                                 .font(.system(size: 30))
-                            Text("Last checked in at \(date)")
+                            Text("Last checked in on \(date)")
                                 .foregroundColor(.gray)
                                 .font(.system(size: 15))
                         }
@@ -127,7 +127,6 @@ struct ProfileView: View {
         dataArray.append(name)
         dataArray.append(relationship)
         dataArray.append(phonenumber)
-        print(dataArray)
     }
     func textIsAppropriate() -> Bool {
         if phonenumber.count == 10 && name.count > 0 && relationship.count > 0 {
