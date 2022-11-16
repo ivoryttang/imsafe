@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A5095661D1291256BFF4053 /* Pods_imsafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 873AEDE3741FC1407CD5E816 /* Pods_imsafe.framework */; };
 		D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA789291EE47E007D975E /* imsafeApp.swift */; };
 		D32EA78C291EE47E007D975E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA78B291EE47E007D975E /* LoginView.swift */; };
 		D32EA78E291EE47F007D975E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D32EA78D291EE47F007D975E /* Assets.xcassets */; };
@@ -34,6 +35,13 @@
 		D32EA80B291F697E007D975E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80A291F697E007D975E /* ViewController.swift */; };
 		D32EA80D291F6A22007D975E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80C291F6A22007D975E /* InterfaceController.swift */; };
 		D32EA80F292018A4007D975E /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80E292018A4007D975E /* MyView.swift */; };
+		D3BE12C3292438E00053AEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE12C2292438E00053AEE8 /* AppDelegate.swift */; };
+		D3BE12C629243C5C0053AEE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE12C529243C5C0053AEE8 /* FirebaseAuth */; };
+		D3BE12C929243C950053AEE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE12C829243C950053AEE8 /* FirebaseAuth */; };
+		D3BE12CC29243CD60053AEE8 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE12CB29243CD60053AEE8 /* GoogleSignIn */; };
+		D3BE12CE29243CD60053AEE8 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE12CD29243CD60053AEE8 /* GoogleSignInSwift */; };
+		D3BE12D3292443900053AEE8 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE12D2292443900053AEE8 /* AuthenticationViewModel.swift */; };
+		D3BE12DD2924A3040053AEE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3BE12DC2924A3040053AEE8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +115,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		873AEDE3741FC1407CD5E816 /* Pods_imsafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imsafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ACA764F0EE121AD642C1D26 /* Pods-imsafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imsafe.release.xcconfig"; path = "Target Support Files/Pods-imsafe/Pods-imsafe.release.xcconfig"; sourceTree = "<group>"; };
+		A58EEC50832504A377EA4EED /* Pods-imsafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imsafe.debug.xcconfig"; path = "Target Support Files/Pods-imsafe/Pods-imsafe.debug.xcconfig"; sourceTree = "<group>"; };
 		D32EA786291EE47E007D975E /* imsafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imsafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D32EA789291EE47E007D975E /* imsafeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imsafeApp.swift; sourceTree = "<group>"; };
 		D32EA78B291EE47E007D975E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -141,6 +152,10 @@
 		D32EA80A291F697E007D975E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D32EA80C291F6A22007D975E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		D32EA80E292018A4007D975E /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		D3BE12C2292438E00053AEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3BE12D129243D380053AEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D3BE12D2292443900053AEE8 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		D3BE12DC2924A3040053AEE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +163,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3BE12CE29243CD60053AEE8 /* GoogleSignInSwift in Frameworks */,
+				5A5095661D1291256BFF4053 /* Pods_imsafe.framework in Frameworks */,
+				D3BE12CC29243CD60053AEE8 /* GoogleSignIn in Frameworks */,
+				D3BE12C929243C950053AEE8 /* FirebaseAuth in Frameworks */,
+				D3BE12C629243C5C0053AEE8 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +209,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05FA90FA8A41A26CF2A2133A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A58EEC50832504A377EA4EED /* Pods-imsafe.debug.xcconfig */,
+				8ACA764F0EE121AD642C1D26 /* Pods-imsafe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D32EA77D291EE47E007D975E = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +229,8 @@
 				D32EA7D2291EE481007D975E /* imsafe WatchKit AppTests */,
 				D32EA7DC291EE481007D975E /* imsafe WatchKit AppUITests */,
 				D32EA787291EE47E007D975E /* Products */,
+				05FA90FA8A41A26CF2A2133A /* Pods */,
+				E09F61BA1BA1A7FA37FD4D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,12 +251,16 @@
 		D32EA788291EE47E007D975E /* imsafe */ = {
 			isa = PBXGroup;
 			children = (
+				D3BE12D129243D380053AEE8 /* Info.plist */,
 				D32EA789291EE47E007D975E /* imsafeApp.swift */,
+				D3BE12C2292438E00053AEE8 /* AppDelegate.swift */,
+				D3BE12D2292443900053AEE8 /* AuthenticationViewModel.swift */,
 				D32EA7FC291EE631007D975E /* Profile.swift */,
 				D32EA7FA291EE5CF007D975E /* Main.swift */,
 				D32EA78B291EE47E007D975E /* LoginView.swift */,
 				D32EA806291F1BFB007D975E /* ContentView.swift */,
 				D32EA7FE291EE6C1007D975E /* MainView.swift */,
+				D3BE12DC2924A3040053AEE8 /* GoogleService-Info.plist */,
 				D32EA78D291EE47F007D975E /* Assets.xcassets */,
 				D32EA78F291EE47F007D975E /* Preview Content */,
 				D32EA80A291F697E007D975E /* ViewController.swift */,
@@ -309,6 +344,14 @@
 			path = "imsafe WatchKit AppUITests";
 			sourceTree = "<group>";
 		};
+		E09F61BA1BA1A7FA37FD4D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				873AEDE3741FC1407CD5E816 /* Pods_imsafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,10 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D32EA7EB291EE481007D975E /* Build configuration list for PBXNativeTarget "imsafe" */;
 			buildPhases = (
+				9DEF09EC99BC5702BB747CFA /* [CP] Check Pods Manifest.lock */,
 				D32EA782291EE47E007D975E /* Sources */,
 				D32EA783291EE47E007D975E /* Frameworks */,
 				D32EA784291EE47E007D975E /* Resources */,
 				D32EA7EA291EE481007D975E /* Embed Watch Content */,
+				3D51DAAB37F70DFD18447AD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +372,12 @@
 				D32EA7AD291EE47F007D975E /* PBXTargetDependency */,
 			);
 			name = imsafe;
+			packageProductDependencies = (
+				D3BE12C529243C5C0053AEE8 /* FirebaseAuth */,
+				D3BE12C829243C950053AEE8 /* FirebaseAuth */,
+				D3BE12CB29243CD60053AEE8 /* GoogleSignIn */,
+				D3BE12CD29243CD60053AEE8 /* GoogleSignInSwift */,
+			);
 			productName = imsafe;
 			productReference = D32EA786291EE47E007D975E /* imsafe.app */;
 			productType = "com.apple.product-type.application";
@@ -483,6 +534,11 @@
 				Base,
 			);
 			mainGroup = D32EA77D291EE47E007D975E;
+			packageReferences = (
+				D3BE12C429243C5C0053AEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D3BE12C729243C950053AEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D3BE12CA29243CD60053AEE8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = D32EA787291EE47E007D975E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -505,6 +561,7 @@
 			files = (
 				D32EA791291EE47F007D975E /* Preview Assets.xcassets in Resources */,
 				D32EA78E291EE47F007D975E /* Assets.xcassets in Resources */,
+				D3BE12DD2924A3040053AEE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +612,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D51DAAB37F70DFD18447AD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-imsafe/Pods-imsafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-imsafe/Pods-imsafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-imsafe/Pods-imsafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DEF09EC99BC5702BB747CFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-imsafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D32EA782291EE47E007D975E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -563,8 +662,10 @@
 				D32EA80F292018A4007D975E /* MyView.swift in Sources */,
 				D32EA7FB291EE5CF007D975E /* Main.swift in Sources */,
 				D32EA7FD291EE631007D975E /* Profile.swift in Sources */,
+				D3BE12C3292438E00053AEE8 /* AppDelegate.swift in Sources */,
 				D32EA807291F1BFB007D975E /* ContentView.swift in Sources */,
 				D32EA78C291EE47E007D975E /* LoginView.swift in Sources */,
+				D3BE12D3292443900053AEE8 /* AuthenticationViewModel.swift in Sources */,
 				D32EA80B291F697E007D975E /* ViewController.swift in Sources */,
 				D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */,
 				D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */,
@@ -879,14 +980,17 @@
 		};
 		D32EA7EC291EE481007D975E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58EEC50832504A377EA4EED /* Pods-imsafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"imsafe/Preview Content\"";
+				DEVELOPMENT_TEAM = 2794DWM3DU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = imsafe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -909,14 +1013,17 @@
 		};
 		D32EA7ED291EE481007D975E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ACA764F0EE121AD642C1D26 /* Pods-imsafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"imsafe/Preview Content\"";
+				DEVELOPMENT_TEAM = 2794DWM3DU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = imsafe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1172,6 +1279,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3BE12C429243C5C0053AEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		D3BE12C729243C950053AEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		D3BE12CA29243CD60053AEE8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3BE12C529243C5C0053AEE8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3BE12C429243C5C0053AEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D3BE12C829243C950053AEE8 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3BE12C729243C950053AEE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D3BE12CB29243CD60053AEE8 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3BE12CA29243CD60053AEE8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		D3BE12CD29243CD60053AEE8 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3BE12CA29243CD60053AEE8 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D32EA77E291EE47E007D975E /* Project object */;
 }

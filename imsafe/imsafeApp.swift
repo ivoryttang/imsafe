@@ -6,14 +6,23 @@
 //
 
 import SwiftUI
+import GoogleSignIn
+import FirebaseCore
 
 @main
 struct imsafeApp: App {
+    
     @StateObject private var main = Main()
     
     var body: some Scene {
         WindowGroup {
             LoginView().environmentObject(main)
+                .onAppear {
+                    FirebaseApp.configure()
+                    GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                    // Check if `user` exists; otherwise, do something with `error`
+                    }
+                }
         }
     }
 }

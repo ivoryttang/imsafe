@@ -1,0 +1,6 @@
+framework module Pods_imsafe {
+  umbrella header "Pods-imsafe-umbrella.h"
+
+  export *
+  module * { export * }
+}
