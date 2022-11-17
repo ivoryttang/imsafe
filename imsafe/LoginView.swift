@@ -24,7 +24,7 @@ struct LoginView: View {
             ZStack{
                 beige.ignoresSafeArea()
                 if viewModel.state == .signedIn{
-                    ContentView(username: "ivory", date: Date())
+                    ContentView(username: "get username somehow", date: Date())
                 }else{
                     VStack(spacing:10){
                         Image("HomeScreen")
@@ -44,16 +44,9 @@ struct LoginView: View {
     }
     
     func handleSignInButton() {
-        /*if GIDSignIn.sharedInstance.hasPreviousSignIn() {
-            GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-                viewModel.authenticatePriorUser(for: user, with: error)
-            }
-        }**/
         guard let presentingViewController = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.rootViewController else {return}
         
-        
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-        // Create Google Sign In configuration object.
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config
         
@@ -64,10 +57,6 @@ struct LoginView: View {
             // Sign in succeeded --> display the app's homepage
             let username = signInUser.user.profile?.name
             viewModel.authenticateUser(for: user, with: error)
-            
-            print(viewModel.state)
-            
-            
         }
     }
 }

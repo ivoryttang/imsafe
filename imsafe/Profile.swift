@@ -27,9 +27,6 @@ struct ProfileView: View {
     
     @State var dataArray: [String] = []
     
-    var contacts = [
-        Contact(name: "Vicky Zheng", picture: "Contact", relationship: "Friend", number: "1234567890")
-    ]
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
     
     var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 20) }
@@ -68,52 +65,47 @@ struct ProfileView: View {
                         Text("**Contacts**")
                             .foregroundColor(.black)
                             .font(.system(size: 20))
-                        ForEach(contacts.indices) { i in
-                            ZStack(alignment: .leading) {
-                                Color
-                                    .white
-                                    .frame(width: 360, height: 150)
-                                    .clipShape(shape)
-                                    .overlay(
-                                        shape.stroke(beige, lineWidth: 2)
-                                    )
-                                
-                                HStack {
-                                    Text("\(i+1)")
-                                        .foregroundColor(Color(red: 0.9529, green: 0.7961, blue: 0.2706))
-                                        .font(.system(size: 25))
-                                        .padding([.leading], 10)
-                                    Image(contacts[i].picture)
-                                        .resizable()
-                                        .frame(width: 50, height: 50)
-                                        .clipShape(profile)
-                                        .padding([.leading], 10)
-                                    VStack(alignment: .leading) {
-                                        TextField("Name",text: $name)
-                                            .font(.system(size: 20))
-                                        TextField("Relationship",text: $relationship)
-                                            .foregroundColor(.gray)
-                                        TextField("Number",text: $phonenumber)
-                                            .foregroundColor(.gray)
-                                        Button(action: {if textIsAppropriate(){
-                                            saveText()
-                                        }}, label: {
-                                            Text("Save")
-                                                .padding(3)
-                                                .background(textIsAppropriate() ? Color.blue:Color.gray)
-                                                .cornerRadius(5)
-                                                .foregroundColor(.white)
-                                                .font(.headline)
-                                        })
-                                        .disabled(!textIsAppropriate())
-                                        
-                                    }.padding([.leading], 5)
+                        ZStack(alignment: .leading) {
+                            Color
+                                .white
+                                .frame(width: 360, height: 150)
+                                .clipShape(shape)
+                                .overlay(
+                                    shape.stroke(beige, lineWidth: 2)
+                                )
+                            
+                            HStack {
+                                Image("Contact")
+                                    .resizable()
+                                    .frame(width: 50, height: 50)
+                                    .clipShape(profile)
+                                    .padding([.leading], 10)
+                                VStack(alignment: .leading) {
+                                    TextField("Name",text: $name)
+                                        .font(.system(size: 20))
+                                    TextField("Relationship",text: $relationship)
+                                        .foregroundColor(.gray)
+                                    TextField("Number",text: $phonenumber)
+                                        .foregroundColor(.gray)
+                                    Button(action: {if textIsAppropriate(){
+                                        saveText()
+                                    }}, label: {
+                                        Text("Save")
+                                            .padding(3)
+                                            .background(textIsAppropriate() ? Color.blue:Color.gray)
+                                            .cornerRadius(5)
+                                            .foregroundColor(.white)
+                                            .font(.headline)
+                                    })
+                                    .disabled(!textIsAppropriate())
                                     
-                                }
+                                }.padding([.leading], 5)
+                                
                             }
+                            
                         }
                     }
-                }.padding([.top], 30) // emergency contact end
+                }.padding([.top], 30)
                 Spacer()
                 Button(action: viewModel.signOut) {Text("Log Out")}
                     .foregroundColor(.black)
@@ -126,6 +118,7 @@ struct ProfileView: View {
     }
     
     func saveText(){
+        // TODO: save for each user
         dataArray.append(name)
         dataArray.append(relationship)
         dataArray.append(phonenumber)

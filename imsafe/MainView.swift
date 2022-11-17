@@ -11,10 +11,8 @@ import SwiftUI
 struct MainView: View {
     @EnvironmentObject var main: Main
     @State private var lastButtonPress = Date()
-    @State var isPresented = true
     
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
-    var profile: RoundedRectangle { RoundedRectangle(cornerRadius: 10) }
     
     var body: some View {
         ZStack {
