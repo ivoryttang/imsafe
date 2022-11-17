@@ -18,6 +18,7 @@ class AuthenticationViewModel: ObservableObject {
 
     
     @Published var state: SignInState = .signedOut
+    @Published var username: String = ""
     
     
     func authenticateUser(for user: GIDUserAuth?, with error: Error?) {
@@ -40,6 +41,7 @@ class AuthenticationViewModel: ObservableObject {
             if let error = error {
                 print(error.localizedDescription)
             } else {
+                username = user?.user.profile?.name ?? ""
                 self.state = .signedIn
             }
         }

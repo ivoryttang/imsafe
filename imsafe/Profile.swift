@@ -51,7 +51,7 @@ struct ProfileView: View {
                                 .foregroundColor(.gray)
                         }
                         VStack {
-                            Text(username)
+                            Text(viewModel.username)
                                 .font(.system(size: 30))
                             Text("Last checked in on \(date)")
                                 .foregroundColor(.gray)
