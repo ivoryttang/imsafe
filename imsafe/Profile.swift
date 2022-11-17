@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
 
 struct Contact: Identifiable {
     let id = UUID()
@@ -32,7 +33,7 @@ struct ProfileView: View {
     var shape: RoundedRectangle { RoundedRectangle(cornerRadius: 20) }
     var profile: RoundedRectangle { RoundedRectangle(cornerRadius: 10) }
     
-    @State private var activated = false
+    var ref: DatabaseReference = Database.database().reference()
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -58,7 +59,8 @@ struct ProfileView: View {
                                 .font(.system(size: 15))
                         }
                     }
-                }.padding([.top], 75)
+                }.padding([.top], 75).onAppear{ setDefault() }
+                
                 // emergency contact
                 ZStack {
                     VStack(alignment: .leading) {
@@ -116,13 +118,22 @@ struct ProfileView: View {
             }
         }.ignoresSafeArea()
     }
+    func setDefault() {
+        ref.child("contacts/saving-contact-info/number").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+            phonenumber = snapshot?.value as? String ?? "";
+        });
+        return
+    }
     
     func saveText(){
-        // TODO: save for each user
-        dataArray.append(name)
-        dataArray.append(relationship)
-        dataArray.append(phonenumber)
+        self.ref.child("contacts/saving-contact-info").setValue(["number": phonenumber])
+        print("saved")
     }
+    
     func textIsAppropriate() -> Bool {
         if phonenumber.count == 10 && name.count > 0 && relationship.count > 0 {
             return true

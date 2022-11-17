@@ -21,6 +21,7 @@ struct imsafeApp: App {
             ContentView(username: "", date: Date()).environmentObject(viewModel)
         }
     }
+    
 }
 
 extension imsafeApp {
