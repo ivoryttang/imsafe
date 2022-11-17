@@ -19,6 +19,8 @@ struct ProfileView: View {
     var username: String
     var date: Date
     
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    
     @State var name: String = ""
     @State var relationship: String = ""
     @State var phonenumber: String = ""
@@ -113,7 +115,7 @@ struct ProfileView: View {
                     }
                 }.padding([.top], 30) // emergency contact end
                 Spacer()
-                Button("Log Out") {}
+                Button(action: viewModel.signOut) {Text("Log Out")}
                     .foregroundColor(.black)
                     .frame(width: 300, height: 50)
                     .background(beige)

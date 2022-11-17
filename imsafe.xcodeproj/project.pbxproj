@@ -32,9 +32,7 @@
 		D32EA7FD291EE631007D975E /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FC291EE631007D975E /* Profile.swift */; };
 		D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA7FE291EE6C1007D975E /* MainView.swift */; };
 		D32EA807291F1BFB007D975E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA806291F1BFB007D975E /* ContentView.swift */; };
-		D32EA80B291F697E007D975E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80A291F697E007D975E /* ViewController.swift */; };
 		D32EA80D291F6A22007D975E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80C291F6A22007D975E /* InterfaceController.swift */; };
-		D32EA80F292018A4007D975E /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32EA80E292018A4007D975E /* MyView.swift */; };
 		D3BE12C3292438E00053AEE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BE12C2292438E00053AEE8 /* AppDelegate.swift */; };
 		D3BE12C629243C5C0053AEE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE12C529243C5C0053AEE8 /* FirebaseAuth */; };
 		D3BE12C929243C950053AEE8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3BE12C829243C950053AEE8 /* FirebaseAuth */; };
@@ -149,9 +147,7 @@
 		D32EA7FC291EE631007D975E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D32EA7FE291EE6C1007D975E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D32EA806291F1BFB007D975E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D32EA80A291F697E007D975E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D32EA80C291F6A22007D975E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		D32EA80E292018A4007D975E /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 		D3BE12C2292438E00053AEE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3BE12D129243D380053AEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D3BE12D2292443900053AEE8 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
@@ -253,18 +249,16 @@
 			children = (
 				D3BE12D129243D380053AEE8 /* Info.plist */,
 				D32EA789291EE47E007D975E /* imsafeApp.swift */,
+				D32EA806291F1BFB007D975E /* ContentView.swift */,
+				D32EA78B291EE47E007D975E /* LoginView.swift */,
+				D32EA7FE291EE6C1007D975E /* MainView.swift */,
+				D32EA7FA291EE5CF007D975E /* Main.swift */,
+				D32EA7FC291EE631007D975E /* Profile.swift */,
 				D3BE12C2292438E00053AEE8 /* AppDelegate.swift */,
 				D3BE12D2292443900053AEE8 /* AuthenticationViewModel.swift */,
-				D32EA7FC291EE631007D975E /* Profile.swift */,
-				D32EA7FA291EE5CF007D975E /* Main.swift */,
-				D32EA78B291EE47E007D975E /* LoginView.swift */,
-				D32EA806291F1BFB007D975E /* ContentView.swift */,
-				D32EA7FE291EE6C1007D975E /* MainView.swift */,
 				D3BE12DC2924A3040053AEE8 /* GoogleService-Info.plist */,
 				D32EA78D291EE47F007D975E /* Assets.xcassets */,
 				D32EA78F291EE47F007D975E /* Preview Content */,
-				D32EA80A291F697E007D975E /* ViewController.swift */,
-				D32EA80E292018A4007D975E /* MyView.swift */,
 			);
 			path = imsafe;
 			sourceTree = "<group>";
@@ -659,14 +653,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D32EA80F292018A4007D975E /* MyView.swift in Sources */,
 				D32EA7FB291EE5CF007D975E /* Main.swift in Sources */,
 				D32EA7FD291EE631007D975E /* Profile.swift in Sources */,
 				D3BE12C3292438E00053AEE8 /* AppDelegate.swift in Sources */,
 				D32EA807291F1BFB007D975E /* ContentView.swift in Sources */,
 				D32EA78C291EE47E007D975E /* LoginView.swift in Sources */,
 				D3BE12D3292443900053AEE8 /* AuthenticationViewModel.swift in Sources */,
-				D32EA80B291F697E007D975E /* ViewController.swift in Sources */,
 				D32EA7FF291EE6C1007D975E /* MainView.swift in Sources */,
 				D32EA78A291EE47E007D975E /* imsafeApp.swift in Sources */,
 			);

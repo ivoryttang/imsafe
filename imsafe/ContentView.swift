@@ -11,17 +11,27 @@ import WatchConnectivity
 struct ContentView: View {
     var username: String
     var date: Date
+    @EnvironmentObject var viewModel : AuthenticationViewModel
+    @StateObject var main = Main()
+    
     
     var body: some View {
-        
-        
-        TabView {
-            MainView().tabItem {}
-            ProfileView(username: username, date: date).tabItem {}
+        switch viewModel.state {
+            case .signedIn:
+                VStack{
+                    TabView {
+                        MainView().environmentObject(main).tabItem {}
+                        ProfileView(username: username, date: date).tabItem {}
+                    }
+                    .tabViewStyle(.page)
+                    .indexViewStyle(.page(backgroundDisplayMode: .never))
+                    .edgesIgnoringSafeArea(.all)
+                }
+            case .signedOut:
+                VStack{
+                    LoginView().environmentObject(viewModel)
+                }
         }
-        .tabViewStyle(.page)
-        .indexViewStyle(.page(backgroundDisplayMode: .never))
-        .edgesIgnoringSafeArea(.all)
          
     }
 }

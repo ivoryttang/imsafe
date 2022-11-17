@@ -46,9 +46,7 @@ struct MainView: View {
                     .frame(width: buttonSize, height: buttonSize)
                     .background(innerCircle)
                     .clipShape(Circle())
-                    .sheet(isPresented: $isPresented){
-                        MyView()
-                    }
+                    
                 }.padding([.top, .bottom], 30)
                 Text(main.getCurrentInstructions())
                     .multilineTextAlignment(.center)
