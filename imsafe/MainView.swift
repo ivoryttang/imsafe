@@ -6,11 +6,72 @@
 //
 
 import Foundation
+import CoreLocation
 import SwiftUI
+
+class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegate {
+    var locationManager = CLLocationManager()
+    @Published var location: CLLocationCoordinate2D?
+
+    override init() {
+        super.init()
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+    }
+    
+    let url = URL(string: "https://console.cloud.google.com/storage/browser/imsafe_location_tracking")
+
+        
+    func requestLocation() {
+        locationManager.requestLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        location = locations.first?.coordinate
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("So failed: \(error)")
+    }
+    
+    func sendPUT() {
+        var request = URLRequest(url: url!)
+        request.setValue("Bearer " + "ya29.a0AeTM1icuG9QEFmXthsHOO0rvlB9AghSv6f7qamCq7UM4fEFB9qLtwE-636KPqEdpFfMmWCnH8_DuW6PxBnpf2J3HthQM7ILkpFi2OADb_vtbJXHlaL-IvwrH-XiTdjD051znBWpwlnuIyoLcFslbkTM4vbCUaCgYKAdASARISFQHWtWOmFxaYXfcbUMCkBlT557RkIw0163", forHTTPHeaderField: "Authorization")
+        
+        // Serialize HTTP Body data as JSON
+        let body = ["location": location]
+        let bodyData = try? JSONSerialization.data(
+            withJSONObject: body,
+            options: []
+        )
+
+        // Change the URLRequest to a PUT request
+        request.httpMethod = "PUT"
+        request.httpBody = bodyData
+        
+        print(request.allHTTPHeaderFields!)
+        
+        // Create the HTTP request
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { (data, response, error) in
+
+            if let error = error {
+                print("HTTP POST request error: \(error)")
+            } else if data != nil {
+                print("HTTP POST response: \(response!.description)")
+            } else {
+                print("HTTP POST request error")
+            }
+        }
+        
+        task.resume()
+    }
+}
 
 struct MainView: View {
     @EnvironmentObject var main: Main
     @State private var lastButtonPress = Date()
+    @StateObject var locationManager = LocationDataManager()
     
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
     
@@ -37,7 +98,8 @@ struct MainView: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + secondsToDelay) {
                             main.safetyConfirmed.toggle()
                         }
-                        
+                        locationManager.requestLocation()
+                        locationManager.sendPUT()
                     }
                     .foregroundColor(.black)
                     .font(.system(size: 25))
@@ -48,7 +110,9 @@ struct MainView: View {
                 }.padding([.top, .bottom], 30)
                 Text(main.getCurrentInstructions())
                     .multilineTextAlignment(.center)
-
+                if let location = locationManager.location {
+                    Text("Your location: \(location.latitude), \(location.longitude)")
+                }
             }
         }
     }
