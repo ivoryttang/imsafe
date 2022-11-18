@@ -70,10 +70,12 @@ class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegat
 
 struct MainView: View {
     @EnvironmentObject var main: Main
+    @EnvironmentObject var viewModel : AuthenticationViewModel
     @State private var lastButtonPress = Date()
     @StateObject var locationManager = LocationDataManager()
     
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
+    let center = UNUserNotificationCenter.current()
     
     var body: some View {
         ZStack {
@@ -100,6 +102,32 @@ struct MainView: View {
                         }
                         locationManager.requestLocation()
                         locationManager.sendPUT()
+                        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+                            
+                            if let error = error {
+                                // Handle the error here.
+                            }
+                            
+                            // Enable or disable features based on the authorization.
+                        }
+                        let content = UNMutableNotificationContent()
+                        content.title = "Location Update"
+                        content.body = viewModel.username + " has confirmed their safety"
+                        let uuidString = UUID().uuidString
+                        var date = DateComponents()
+                        date.hour = 17
+                        date.minute = 3
+                        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
+                        let request = UNNotificationRequest(identifier: uuidString,
+                                    content: content, trigger: trigger)
+
+                        // Schedule the request with the system.
+                        let notificationCenter = UNUserNotificationCenter.current()
+                        notificationCenter.add(request) { (error) in
+                           if error != nil {
+                              // Handle any errors.
+                           }
+                        }
                     }
                     .foregroundColor(.black)
                     .font(.system(size: 25))
