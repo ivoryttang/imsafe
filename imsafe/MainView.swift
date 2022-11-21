@@ -8,6 +8,7 @@
 import Foundation
 import CoreLocation
 import SwiftUI
+import FirebaseDatabase
 
 class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     var locationManager = CLLocationManager()
@@ -17,6 +18,7 @@ class LocationDataManager : NSObject, ObservableObject, CLLocationManagerDelegat
         super.init()
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
+        locationManager.allowsBackgroundLocationUpdates = true
     }
     
     let url = URL(string: "https://console.cloud.google.com/storage/browser/imsafe_location_tracking")
@@ -73,6 +75,15 @@ struct MainView: View {
     @EnvironmentObject var viewModel : AuthenticationViewModel
     @State private var lastButtonPress = Date()
     @StateObject var locationManager = LocationDataManager()
+    @State var alert: Bool? {
+        willSet {
+            print("Before")
+        }
+        didSet { notify() }
+    }
+    @State var contact: String = ""
+    
+    var ref: DatabaseReference = Database.database().reference()
     
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
     let center = UNUserNotificationCenter.current()
@@ -102,32 +113,16 @@ struct MainView: View {
                         }
                         locationManager.requestLocation()
                         locationManager.sendPUT()
-                        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
-                            
-                            if let error = error {
-                                // Handle the error here.
-                            }
-                            
-                            // Enable or disable features based on the authorization.
-                        }
-                        let content = UNMutableNotificationContent()
-                        content.title = "Location Update"
-                        content.body = viewModel.username + " has confirmed their safety"
-                        let uuidString = UUID().uuidString
-                        var date = DateComponents()
-                        date.hour = 17
-                        date.minute = 3
-                        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
-                        let request = UNNotificationRequest(identifier: uuidString,
-                                    content: content, trigger: trigger)
-
-                        // Schedule the request with the system.
-                        let notificationCenter = UNUserNotificationCenter.current()
-                        notificationCenter.add(request) { (error) in
-                           if error != nil {
-                              // Handle any errors.
-                           }
-                        }
+                        
+                        //send alert to contact
+                        self.ref.child("alerts/").updateChildValues([viewModel.username: true])
+                        
+                        //TODO: PUT THIS SOMEWHERE THAT DOESN'T REQUIRE BUTTON PRESS
+                        alert = false
+                        checkAlert()
+                        notify()
+                        //stop alert contact
+                        //self.ref.child("alerts/").updateChildValues([viewModel.username: false])
                     }
                     .foregroundColor(.black)
                     .font(.system(size: 25))
@@ -143,6 +138,62 @@ struct MainView: View {
                 }
             }
         }
+    }
+    func checkAlert(){
+        // get contact name
+        ref.child("/contacts/saving-contact-info/\(viewModel.username)/name").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+            contact = snapshot?.value as? String ?? "";
+        });
+        
+        // get whether contact generated alert
+        ref.child("alerts/\(contact)").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+            alert = snapshot?.value as? Bool ?? false;
+        });
+    }
+    func notify(){
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            
+            if let error = error {
+                // Handle the error here.
+            }
+            
+            // Enable or disable features based on the authorization.
+        }
+        let content = UNMutableNotificationContent()
+        content.title = "Location Update"
+        content.body = viewModel.username + " has confirmed their safety"
+        
+        let uuidString = UUID().uuidString
+        var date = DateComponents()
+        date.hour = Calendar.current.component(.hour, from: Date())
+        date.minute = Calendar.current.component(.minute, from: Date())
+        date.second = Calendar.current.component(.second, from: Date()) + 3
+        let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
+        let request = UNNotificationRequest(identifier: uuidString,
+                    content: content, trigger: trigger)
+        
+        
+        // Schedule the request with the system.
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+
+        if alert ?? false {
+            notificationCenter.add(request) { (error) in
+                if error != nil {
+                  // Handle any errors.
+                }
+                print("ALERTED")
+            }
+        }
+        print("ALERTED")
     }
 }
 

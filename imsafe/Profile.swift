@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseDatabase
+import FirebaseAuth
 
 struct Contact: Identifiable {
     let id = UUID()
@@ -24,9 +25,8 @@ struct ProfileView: View {
     
     @State var name: String = ""
     @State var relationship: String = ""
-    @State var phonenumber: String = ""
-    
-    @State var dataArray: [String] = []
+    @State var email: String = ""
+    @State var users: Dictionary = ["":""]
     
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
     
@@ -87,7 +87,7 @@ struct ProfileView: View {
                                         .font(.system(size: 20))
                                     TextField("Relationship",text: $relationship)
                                         .foregroundColor(.gray)
-                                    TextField("Number",text: $phonenumber)
+                                    TextField("Email",text: $email)
                                         .foregroundColor(.gray)
                                     Button(action: {if textIsAppropriate(){
                                         saveText()
@@ -119,23 +119,45 @@ struct ProfileView: View {
         }.ignoresSafeArea()
     }
     func setDefault() {
-        ref.child("contacts/saving-contact-info/number").getData(completion:  { error, snapshot in
+        ref.child("contacts/saving-contact-info/\(viewModel.username)/name").getData(completion:  { error, snapshot in
           guard error == nil else {
             print(error!.localizedDescription)
             return;
           }
-            phonenumber = snapshot?.value as? String ?? "";
+            name = snapshot?.value as? String ?? "";
+        });
+        ref.child("contacts/saving-contact-info/\(viewModel.username)/relationship").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+            relationship = snapshot?.value as? String ?? "";
+        });
+        ref.child("contacts/saving-contact-info/\(viewModel.username)/email").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+            email = snapshot?.value as? String ?? "";
         });
         return
     }
     
     func saveText(){
-        self.ref.child("contacts/saving-contact-info").setValue(["number": phonenumber])
+        self.ref.child("contacts/saving-contact-info/\(viewModel.username)").setValue(["name": name, "relationship": relationship, "email": email])
         print("saved")
     }
     
     func textIsAppropriate() -> Bool {
-        if phonenumber.count == 10 && name.count > 0 && relationship.count > 0 {
+        ref.child("users").getData(completion:  { error, snapshot in
+          guard error == nil else {
+            print(error!.localizedDescription)
+            return;
+          }
+            users = snapshot?.value as? Dictionary ?? ["":""];
+        });
+        
+        if email.count > 0 && users.values.contains(email.lowercased()) && name.count > 0 && relationship.count > 0 {
             return true
         }
         return false

@@ -7,6 +7,7 @@
 
 import FirebaseAuth
 import GoogleSignIn
+import FirebaseDatabase
 
 class AuthenticationViewModel: ObservableObject {
 
@@ -19,7 +20,9 @@ class AuthenticationViewModel: ObservableObject {
     
     @Published var state: SignInState = .signedOut
     @Published var username: String = ""
+    @Published var email: String = ""
     
+    var ref: DatabaseReference = Database.database().reference()
     
     func authenticateUser(for user: GIDUserAuth?, with error: Error?) {
         
@@ -35,14 +38,27 @@ class AuthenticationViewModel: ObservableObject {
             return
         }
         let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-        self.state = .signedIn
         
         Auth.auth().signIn(with: credential) { [unowned self] (_, error) in
             if let error = error {
                 print(error.localizedDescription)
             } else {
                 username = user?.user.profile?.name ?? ""
+                email = user?.user.profile?.email ?? "unknown"
+                print(email)
                 self.state = .signedIn
+                self.ref.child("users/").updateChildValues([username:email])
+                self.ref.child("alerts/").updateChildValues([username:false])
+                
+                //only add member to contacts if user not existing already, otherwise will overwrite
+                ref.child("contacts/saving-contact-info/\(username)").getData(completion:  { error, snapshot in
+                  guard error == nil else {
+                    print(error!.localizedDescription)
+                    self.ref.child("contacts/saving-contact-info/").updateChildValues([username:""])
+                    return;
+                  }
+                });
+                
             }
         }
     }

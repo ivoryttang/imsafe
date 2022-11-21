@@ -33,7 +33,7 @@ class Main: ObservableObject {
         if safetyConfirmed {
             return "Your status has been sent to your contacts. You will be redirected to the previous page in 5 seconds."
         } else {
-            return "Tap twice to let your contacts know you're safe."
+            return "Tap to let your contacts know you're safe and end planned trip."
         }
     }
 }

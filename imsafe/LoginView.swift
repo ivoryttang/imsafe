@@ -10,6 +10,7 @@ import GoogleSignInSwift
 import GoogleSignIn
 import FirebaseCore
 import Firebase
+import FirebaseDatabase
 
 struct LoginView: View {
     let beige = Color(red: 0.9804, green: 0.9333, blue: 0.7725)
@@ -24,7 +25,7 @@ struct LoginView: View {
             ZStack{
                 beige.ignoresSafeArea()
                 if viewModel.state == .signedIn{
-                    ContentView(username: "get username somehow", date: Date())
+                    ContentView(username: "", date: Date())
                 }else{
                     VStack(spacing:10){
                         Image("HomeScreen")

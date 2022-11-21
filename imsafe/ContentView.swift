@@ -21,6 +21,7 @@ struct ContentView: View {
                 VStack{
                     TabView {
                         MainView().environmentObject(main).tabItem {}
+                        PresetView().tabItem() {}
                         ProfileView(username: username, date: date).tabItem {}
                     }
                     .tabViewStyle(.page)
@@ -34,6 +35,7 @@ struct ContentView: View {
         }
          
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
